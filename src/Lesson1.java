@@ -1,3 +1,10 @@
+/*
+ * Java 1. Homework #1
+ *
+ * @author Probkina Anastasia
+ * @version 09.12.2021
+ */
+
 public class Lesson1 {
     public static void main(String[] args) {
         printThreeWords();
@@ -15,12 +22,7 @@ public class Lesson1 {
     static void checkSumSign() {
         int a = 3;
         int b = 5;
-
-        if (a + b >= 0) {
-            System.out.println("Сумма положительная");
-        } else {
-            System.out.println("Сумма отрицательная");
-        }
+        System.out.println(a + b >= 0 ? "sum is positive" : "sum is negative");
     }
 
     static void printColor() {
@@ -37,13 +39,9 @@ public class Lesson1 {
     }
 
     static void compareNumbers() {
-        int a = 10;
+        int a = 18;
         int b = 13;
-        if (a >= b) {
-            System.out.println("a >= b");
-        } else {
-            System.out.println("a < b");
-        }
+        System.out.println(a >= b ? "a >= b" : "a < b");
     }
 }
 
