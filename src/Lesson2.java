@@ -13,7 +13,7 @@ public class Lesson2 {
         printPositiveNegative(4);
         isPositive(-5);
         repeatPrint("I love Java", 10);
-        checkLeapYears();
+        checkLeapYears(2021);
     }
 
     static boolean checkTrueFalse(int a, int b) {
@@ -27,7 +27,7 @@ public class Lesson2 {
     }
 
     static boolean isPositive(int x) {
-        return x >= 0;
+        return x < 0;
     }
 
     static void repeatPrint(String text, int count) {
@@ -36,11 +36,8 @@ public class Lesson2 {
         }
     }
 
-    static boolean checkLeapYears() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter year");
-        int year = scanner.nextInt();
-        return year % 4 == 0 && year % 100 != 0;
+    static boolean checkLeapYears(int year) {
+        return (year % 400 == 0 || year % 4 == 0) && year % 100 != 0;
     }
 
 }
