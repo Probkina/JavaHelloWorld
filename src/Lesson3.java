@@ -21,11 +21,12 @@ public class Lesson3 {
     static void changeZeroToOne(int[] numbers) {
         System.out.println(Arrays.toString(numbers));
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] == 1) {
-                numbers[i] = 0;
-            } else if (numbers[i] == 0) {
-                numbers[i] = 1;
-            }
+            numbers[i] = numbers[i] == 1? 0: 1;
+//            if (numbers[i] == 1) {
+//                numbers[i] = 0;
+//            } else if (numbers[i] == 0) {
+//                numbers[i] = 1;
+//            }
         }
         System.out.println(Arrays.toString(numbers));
     }
@@ -34,7 +35,7 @@ public class Lesson3 {
         int[] numbers = new int[100];
         System.out.println(Arrays.toString(numbers));
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = i;
+            numbers[i] = i + 1;
         }
         System.out.println(Arrays.toString(numbers));
     }
@@ -60,7 +61,11 @@ public class Lesson3 {
                 if (i == j) {
                     numbers[i][j] = value;
                 }
+                if (i + j == numbers.length -1){
+                    numbers[i][j] = value;
+                }
             }
+
         }
         printArray(numbers);
     }
