@@ -1,3 +1,9 @@
+/*
+ * Java 1. Homework #6
+ *
+ * @author Probkina Anastasia
+ * @version 24.12.2021
+ */
 package Lesson6;
 
 public class Test {
